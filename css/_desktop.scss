@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1200px) {
+	#header {
+		.header {
+			.nav-list {
+				.hamburger {
+					display: none;
+				}
+
+				ul {
+					display: block;
+					position: initial;
+					height: auto;
+					width: fit-content;
+					background-color: transparent;
+
+					li {
+						display: inline-block;
+
+						a {
+							font-size: 1.5rem;
+
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#service {
+		.service-body {
+			.service {
+				flex-basis: 22%;
+				margin: 1.5%;
+			}
+		}
+	}
+
+	#skills {
+		.skills {
+			.all-skills {
+				.skill {
+					flex-basis: 10%;
+					margin: 15px;
+				}
+			}
+		}
+	}
+}
