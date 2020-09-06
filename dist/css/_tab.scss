@@ -1,0 +1,96 @@
+// Media Query for Tablets
+
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	.hero h1 {
+		font-size: 7rem;
+	}
+
+	.section-head h1 {
+		font-size: 7rem;
+	}
+
+	#service .services {
+		.service {
+			flex-basis: 45%;
+		}
+	}
+
+	#projects {
+		.projects .all-projects {
+			.project {
+				flex-direction: row;
+				height: 400px;
+				margin: 0;
+				width: 100%;
+
+				.project-info {
+					height: 100%;
+				}
+
+				.project-img {
+					height: 100%;
+					flex-basis: 50%;
+				}
+
+				&:nth-child(even) {
+					flex-direction: row-reverse;
+				}
+			}
+		}
+	}
+
+	#about .about {
+		flex-direction: row;
+
+		.left {
+			width: 600px;
+			height: 400px;
+			padding-left: 60px;
+
+			.about-img::after {
+				left: -45px;
+				top: 34px;
+				border: 10px solid crimson;
+			}
+		}
+
+		.right {
+			text-align: left;
+			padding: 30px;
+
+			h1,
+			h2 {
+				text-align: left;
+				padding-left: 10px;
+			}
+		}
+	}
+
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-height: 20vh;
+
+		.contacts {
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			width: 100%;
+
+			.contact-item {
+				margin: 20px;
+				min-width: 100px;
+
+				.contact-info {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
